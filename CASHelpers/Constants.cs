@@ -5,6 +5,7 @@
         public class ApiRoutes
         {
             public const string Token = "/Token";
+            public const string RefreshToken = "/RefreshToken";
         }
 
         public class HeaderNames
