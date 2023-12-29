@@ -11,11 +11,13 @@
         {
             public const string ApiKey = "ApiKey";
             public const string Authorization = "Authorization";
+            public const string XForwardedFor = "X-Forwarded-For";
         }
 
         public class HttpItems
         {
             public const string UserID = "UserID";
+            public const string IP = "IP";
         }
 
         public class TokenClaims
