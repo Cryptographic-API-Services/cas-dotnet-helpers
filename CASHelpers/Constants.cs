@@ -25,6 +25,7 @@
         {
             public const string Id = "id";
             public const string PublicKey = "PublicKey";
+            public const string IsAdmin = "IsAdmin";
         }
     }
 }
