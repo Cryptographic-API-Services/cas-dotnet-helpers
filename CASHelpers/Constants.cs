@@ -15,6 +15,8 @@
             public const string ApiKey = "ApiKey";
             public const string Authorization = "Authorization";
             public const string XForwardedFor = "X-Forwarded-For";
+            public const string ContentType = "Content-Type";
+            public const string ApplicationJson = "application/json";
         }
 
         public class HttpItems

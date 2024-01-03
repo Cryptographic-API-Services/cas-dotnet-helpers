@@ -8,7 +8,7 @@ namespace CASHelpers.Types.HttpResponses.BenchmarkAPI
 {
     public enum BenchmarkMethodType
     {
-        Astmmetric = 0, 
+        Asymmetric = 0, 
         Hash = 1,
         PasswordHash = 2,
         Signatures = 3,
