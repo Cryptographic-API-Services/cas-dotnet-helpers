@@ -6,6 +6,7 @@
         {
             public const string Token = "/Token";
             public const string RefreshToken = "/RefreshToken";
+            public const string BenchmarkSDKMethodController = "/BenchmarkSDKMethod";
             public const string MethodBenchmark = "/MethodBenchmark";
         }
 
