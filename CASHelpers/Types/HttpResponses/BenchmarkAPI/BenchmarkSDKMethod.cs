@@ -2,7 +2,7 @@
 {
     public class BenchmarkSDKMethod
     {
-        public DateTime MethodStart { get; set; } 
+        public DateTime MethodStart { get; set; }
         public DateTime MethodEnd { get; set; }
         public string MethodName { get; set; }
         public string? MethodDescription { get; set; } = string.Empty;
