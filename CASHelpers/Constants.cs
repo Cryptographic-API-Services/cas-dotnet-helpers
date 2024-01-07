@@ -31,5 +31,10 @@
             public const string PublicKey = "PublicKey";
             public const string IsAdmin = "IsAdmin";
         }
+
+        public class Configuration
+        {
+            public const string Url = "Url";
+        }
     }
 }
