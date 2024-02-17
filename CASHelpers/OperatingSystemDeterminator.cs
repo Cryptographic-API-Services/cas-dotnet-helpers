@@ -21,5 +21,11 @@ namespace CASHelpers
             }
             throw new Exception("Cannot determine unsupported operating system.");
         }
+
+        public string OperationSystemVersionString()
+        {
+            OperatingSystem os = Environment.OSVersion;
+            return os.VersionString;
+        }
     }
 }
