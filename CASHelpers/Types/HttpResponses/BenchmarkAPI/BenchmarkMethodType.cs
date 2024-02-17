@@ -7,6 +7,7 @@
         PasswordHash = 2,
         Signatures = 3,
         Symmetric = 4,
-        DigitalSignature = 5
+        DigitalSignature = 5,
+        KeyExchange = 6
     }
 }
