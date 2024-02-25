@@ -3,6 +3,6 @@
     public class DiffieHellmanAesDerivationRequest
     {
         public string MacAddress { get; set; }
-        public string RequestersPublicKey { get; set; }
+        public byte[] RequestersPublicKey { get; set; }
     }
 }

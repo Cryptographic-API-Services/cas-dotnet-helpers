@@ -2,6 +2,6 @@
 {
     public class DiffieHellmanAesDerivationResponse
     {
-        public string ResponsersPublicKey { get; set; }
+        public byte[] ResponsersPublicKey { get; set; }
     }
 }
