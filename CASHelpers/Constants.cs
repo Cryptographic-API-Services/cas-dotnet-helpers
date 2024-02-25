@@ -40,6 +40,7 @@
         public class RedisKeys
         {
             public const string OsInformation = "OS-Information-";
+            public const string DiffieHellmanAesKey = "Diffie-Hellman-Aes-Key-";
         }
     }
 }
