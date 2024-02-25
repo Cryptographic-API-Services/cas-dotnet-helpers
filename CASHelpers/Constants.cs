@@ -36,5 +36,10 @@
         {
             public const string Url = "Url";
         }
+
+        public class RedisKeys
+        {
+            public const string OsInformation = "OS-Information-";
+        }
     }
 }
