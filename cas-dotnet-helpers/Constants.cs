@@ -23,6 +23,7 @@
         {
             public const string UserID = "UserID";
             public const string IP = "IP";
+            public const string IsAdmin = "IsAdmin";
         }
 
         public class TokenClaims
