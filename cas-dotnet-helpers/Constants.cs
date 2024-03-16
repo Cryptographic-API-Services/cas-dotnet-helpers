@@ -41,6 +41,7 @@
         {
             public const string OsInformation = "OS-Information-";
             public const string DiffieHellmanAesKey = "Diffie-Hellman-Aes-Key-";
+            public const string IsActiveUser = "Is-User-Active-";
         }
     }
 }
