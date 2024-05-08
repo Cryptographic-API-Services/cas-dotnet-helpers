@@ -8,6 +8,7 @@
         Signatures = 3,
         Symmetric = 4,
         DigitalSignature = 5,
-        KeyExchange = 6
+        KeyExchange = 6,
+        Sponge = 7
     }
 }
