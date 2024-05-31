@@ -60,21 +60,27 @@ namespace CASHelpers
             return result.IsValid;
         }
 
-        public string GenerateECCToken(string userId, bool isAdmin, ECDSAWrapper key, double hoursToAdd)
+        public string GenerateECCToken(string userId, bool isAdmin, ECDSAWrapper key, double hoursToAdd, string? subscriptionPublicKey = null)
         {
             var handler = new JsonWebTokenHandler();
             DateTime now = DateTime.UtcNow;
+            List<Claim> claims = new List<Claim>()
+            {
+                new Claim(Constants.TokenClaims.Id, userId),
+                new Claim(Constants.TokenClaims.PublicKey, key.PublicKey),
+                new Claim(Constants.TokenClaims.IsAdmin, isAdmin.ToString())
+            };
+            if (subscriptionPublicKey != null)
+            {
+                claims.Add(new Claim(Constants.TokenClaims.SubscriptionPublicKey, subscriptionPublicKey));
+            }
             string token = handler.CreateToken(new SecurityTokenDescriptor
             {
                 Issuer = "https://encryptionapiservices.com",
                 NotBefore = now,
                 Expires = now.AddHours(1),
                 IssuedAt = now,
-                Subject = new ClaimsIdentity(new[] {
-                    new Claim(Constants.TokenClaims.Id, userId),
-                    new Claim(Constants.TokenClaims.PublicKey, key.PublicKey),
-                    new Claim(Constants.TokenClaims.IsAdmin, isAdmin.ToString())
-                }),
+                Subject = new ClaimsIdentity(claims),
                 SigningCredentials = new SigningCredentials(new ECDsaSecurityKey(key.ECDKey), "ES256")
             });
             return token;

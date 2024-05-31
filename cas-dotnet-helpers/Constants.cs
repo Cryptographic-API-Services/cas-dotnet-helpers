@@ -31,6 +31,7 @@
             public const string Id = "id";
             public const string PublicKey = "PublicKey";
             public const string IsAdmin = "IsAdmin";
+            public const string SubscriptionPublicKey = "SubscriptionPublicKey";
         }
 
         public class Configuration
