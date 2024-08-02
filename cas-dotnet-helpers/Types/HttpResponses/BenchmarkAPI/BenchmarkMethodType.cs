@@ -9,6 +9,7 @@
         Symmetric = 4,
         DigitalSignature = 5,
         KeyExchange = 6,
-        Sponge = 7
+        Sponge = 7,
+        Compression = 8
     }
 }
