@@ -45,6 +45,7 @@
             public const string DiffieHellmanAesKey = "Diffie-Hellman-Aes-Key-";
             public const string IsActiveUser = "Is-User-Active-";
             public const string IsUserAdmin = "Is-User-Admin-";
+            public const string UserTokenPublicKey = "User-Token-Public-Key-";
         }
     }
 }
