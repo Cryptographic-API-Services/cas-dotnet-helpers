@@ -46,6 +46,8 @@
             public const string IsActiveUser = "Is-User-Active-";
             public const string IsUserAdmin = "Is-User-Admin-";
             public const string UserTokenPublicKey = "User-Token-Public-Key-";
+            public const string PublicKeyKey = "PUBLICKEYKEY";
+            public const string PublicKeyNonce = "PUBLICKEYNONCE";
         }
     }
 }
