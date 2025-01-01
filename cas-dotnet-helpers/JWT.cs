@@ -24,7 +24,7 @@ namespace CASHelpers
             return result.IsValid;
         }
 
-        public string GenerateECCToken(string userId, bool isAdmin, ECDSAWrapper ecdsaKey, double hoursToAdd)
+        public string GenerateECCToken(string userId, bool isAdmin, ECDSAWrapper ecdsaKey, double hoursToAdd, string? subscriptionPublicKey = null)
         {
             var handler = new JsonWebTokenHandler();
             DateTime now = DateTime.UtcNow;
@@ -33,6 +33,10 @@ namespace CASHelpers
                 new Claim(Constants.TokenClaims.Id, userId),
                 new Claim(Constants.TokenClaims.IsAdmin, isAdmin.ToString())
             };
+            if (subscriptionPublicKey != null)
+            {
+                claims.Add(new Claim(Constants.TokenClaims.SubscriptionPublicKey, subscriptionPublicKey));
+            }
             string token = handler.CreateToken(new SecurityTokenDescriptor
             {
                 Issuer = "https://cryptographicapiservices.com",
