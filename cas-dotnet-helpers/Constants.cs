@@ -47,7 +47,6 @@
             public const string IsUserAdmin = "Is-User-Admin-";
             public const string UserTokenPublicKey = "User-Token-Public-Key-";
             public const string JWTPublicKeySignature = "JWT-Public-Key-Signature";
-            public const string JWTPublicKeyPublicKey = "JWT-Public-Key-Public-Key";
         }
     }
 }
