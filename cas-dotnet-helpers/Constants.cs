@@ -43,10 +43,13 @@
         {
             public const string OsInformation = "OS-Information-";
             public const string DiffieHellmanAesKey = "Diffie-Hellman-Aes-Key-";
+            public const string SDKIsActiveUser = "SDK-Is-User-Active-";
             public const string IsActiveUser = "Is-User-Active-";
             public const string IsUserAdmin = "Is-User-Admin-";
             public const string UserTokenPublicKey = "User-Token-Public-Key-";
+            public const string SDKUserTokenPublicKeyh = "SDK-User-Token-Public-Key-";
             public const string JWTPublicKeySignature = "JWT-Public-Key-Signature";
+            public const string SDKJWTPublicKeySignature = "SDK-JWT-Public-Key-Signature";
         }
     }
 }
